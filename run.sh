@@ -18,7 +18,7 @@ echo "Capturing image.."
 capture $IMG_INPUT
 
 echo "Transcoding image.."
-transcode $IMG_INPUT $IMG_OUTPUT
+transcode $SQUOOSH_CLI $IMG_INPUT $IMG_OUTPUT
 
 echo "Generating SSTV audio.."
 sstv_encode $IMG_INPUT $IMG_OUTPUT

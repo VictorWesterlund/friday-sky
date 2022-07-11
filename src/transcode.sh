@@ -5,6 +5,6 @@ function transcode {
 	formats="webp mozjpeg"
 	
 	for format in $formats; do
-		squoosh-cli --output-dir "$2" --${format} auto "$1" &> /dev/null
+		$1 --output-dir "$3" --${format} auto "$2" &> /dev/null
 	done
 }
